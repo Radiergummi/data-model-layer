@@ -42,7 +42,7 @@ import Post from '../models/Post';
 const users = await User.all();
 
 // Fetch all active users
-const activeUsers = await Users.where('active', 1);
+const activeUsers = await User.where('active', 1);
 
 // Fetch user 2315
 const myUser = await User.find(2315);
